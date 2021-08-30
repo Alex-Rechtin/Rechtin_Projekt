@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1200px;
+    height: 700px;
+    background-image: url("../pics/background1.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    /*margin: 10px auto;
+    /*display: flex;*/ 
+}
+
+body, input { 
+    font-size: 40px; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+#aufgabe { 
+    font-size: 60px; 
+    margin: 0; 
+    text-align: left;
+}
+
+#etagennummer{
+    font-size: 50px;
+    padding: 20px;
+    color: white;
+    /*position: absolute;
+    top: 0;*/
+}
+
+.tuer{
+    position: absolute;
+    top: 0;
+    width: 96px;
+    height: 88px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkturquoise;
+
+}
+
+#linkeTuer{
+    left: 367px;
+    
+}
+
+#rechteTuer{
+    left: 775px;
+    
+}
+
+input:not([type=submit]) { 
+    width: 60px; 
+}
+  
+[type=submit] { 
+    font-size: 20px; 
+    margin-left: 30px;
+}
+
+#spiel{
+    margin-bottom: 20px;
+}
+
+#summe{
+    width: 90px;
+}
+
+#text{
+    position: absolute;
+    top: 0;
+    width: 300px;
+    left: 470px;
+}
+
+#spieler{
+    /*display: block;*/
+    display: none;
+    height: 200px;
+    width: 200px;
+    background-image: url(../pics/bewegung\ nach\ hinten1.png);
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.button{
+    height: 100px;
+    width: 300px;
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    position: absolute;
+}
+
+#startbutton{
+    background-image: url("../pics/startbutton.png");
+    top: 25%;
+    left: 450px;   
+}
+
+#weiter{
+    background-image: url("../pics/weiterbutton.png");
+    top: 25%;
+    left: 450px;  
+}
+
+#neustart{
+    background-image: url("../pics/neustartbutton.png");
+    top: 45%;
+    left: 450px;   
+}
+
+#hauptmenue{
+    background-image: url("../pics/hauptmenuebutton.png");
+    top: 65%;
+    left: 410px;  
+    height: 100px;
+    width: 385px;
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    position: absolute; 
+}
+
