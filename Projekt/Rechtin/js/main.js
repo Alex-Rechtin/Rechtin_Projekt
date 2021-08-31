@@ -119,9 +119,10 @@ for (let index = 0; index < alleTueren.length; index++) {
         if (e.target.istRichtig === true) {
             //Bei Stufe 30 ist das Ziel des Spiels erreicht und
             // die Zahlen auf den Türen verschwinden
-            if (etage == 30) {
+            if (etage == 2) {
                 gehtWeg();
                 body1.style.backgroundImage ="url('pics/turmraum.png')";
+                location.href = "urkunde.html"
             }
             else{
             console.log("richtig");
@@ -158,12 +159,6 @@ for (let index = 0; index < alleTueren.length; index++) {
     localStorage.setItem("Versuche", fehlversuche);
     localStorage.setItem("Etage", etage);
     localStorage.setItem("Name", namedesSpielers);
-    /*
-    window.addEventListener('afterprint', (event) => {
-        console.log('After print');
-        //reload der Seite
-        location.reload();
-    });*/
 }
 
 //Ab 30 kriegt der spieler die möglichkeit von 2 türen: weiter zugehen oder das spiel ab der Stufe zu beenden!!!
