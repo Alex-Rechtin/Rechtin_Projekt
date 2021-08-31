@@ -59,9 +59,7 @@ startbutton.addEventListener("click", (e) =>{
 
     kommtwieder();
     startbutton.style.display = "none";
-    
-    // startgedruekt wird true weil das der startbutton gedrückt wurde
-    startgedruekt = true;
+    startgedruekt = true;   // startgedruekt wird true weil das der startbutton gedrückt wurde
     stagezahl.textContent = etage;
 });
 
