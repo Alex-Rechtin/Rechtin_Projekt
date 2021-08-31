@@ -20,6 +20,14 @@ body, input {
     text-align: center; 
 }
 
+#namedesSpielers{
+    position: absolute;
+    height: 50px;
+    width: 500px;
+    top: 45%;
+    left: 350px;  
+}
+
 #aufgabe { 
     font-size: 60px; 
     margin: 0; 

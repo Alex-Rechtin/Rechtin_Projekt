@@ -15,5 +15,6 @@ drucken.addEventListener("click", (e) =>{
     wiederholen.style.display= "none";
     drucken.style.display="none";
     window.print();
+    wiederholen.style.display= "block";
 });
 
