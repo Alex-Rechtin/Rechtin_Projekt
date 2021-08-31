@@ -59,7 +59,7 @@ startbutton.addEventListener("click", (e) =>{
     // input feld namedesSpielers wird beim drücken von weiter verschwinden
     namedesSpielers.style.display ="none";
     console.log(namedesSpielers);
-
+    body1.style.backgroundImage = ("url('pics/background1.png");
     kommtwieder();
     startbutton.style.display = "none";
     startgedruekt = true;   // startgedruekt wird true weil das der startbutton gedrückt wurde
@@ -108,7 +108,7 @@ neustartbutton.addEventListener("click", (e) =>{
     stagezahl.textContent = etage;
     console.log(fehlversuche + " Fehlersuche");
     divtext.textContent = "";
-    body1.style.backgroundImage = ("url('pics/background1.png")
+    body1.style.backgroundImage = ("url('pics/background1.png");
 });
 
 
