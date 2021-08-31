@@ -62,7 +62,8 @@ startbutton.addEventListener("click", (e) =>{
     body1.style.backgroundImage = ("url('pics/background1.png");
     kommtwieder();
     startbutton.style.display = "none";
-    startgedruekt = true;   // startgedruekt wird true weil das der startbutton gedrückt wurde
+    // startgedruekt wird true weil das der startbutton gedrückt wurde
+    startgedruekt = true;   
     stagezahl.textContent = etage;
 });
 
