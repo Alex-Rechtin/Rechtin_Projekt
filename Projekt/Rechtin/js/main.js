@@ -1,3 +1,4 @@
+//Der Body
 const body1 = document.querySelector("body")
 
 // Die Aufgabe
@@ -123,8 +124,8 @@ for (let index = 0; index < alleTueren.length; index++) {
             else{
             console.log("richtig");
             // farbe 
-            divtext.style.color = "green";
-            divtext.textContent = "Korrekt";
+            divtext.style.color = "greenyellow";
+            divtext.textContent = "Richtig";
             // etage wird erhöht
             etage++;
             //zufälliger Background wird genommen aus dem Ordner pics
@@ -145,13 +146,15 @@ for (let index = 0; index < alleTueren.length; index++) {
                 fehlversuche++;
             }
             divtext.textContent = "Du bist gefallen!";
-            divtext.style.color = "red";
+            divtext.style.color = "orange";
         }
     
         setzeAufgabe();
         stagezahl.textContent = etage;
         console.log(fehlversuche + " Versuche");
     });
+    localStorage.setItem("Versuche", fehlversuche)
+    localStorage.setItem("Etage", etage)
     /*
     window.addEventListener('afterprint', (event) => {
         console.log('After print');

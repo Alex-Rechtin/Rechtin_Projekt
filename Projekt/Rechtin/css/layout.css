@@ -44,12 +44,10 @@ body, input {
     font-size: 20px;
     font-weight: bold;
     color: darkturquoise;
-
 }
 
 #linkeTuer{
     left: 367px;
-    
 }
 
 #rechteTuer{
@@ -75,10 +73,14 @@ input:not([type=submit]) {
 }
 
 #text{
+    text-shadow: 0 0 10px purple;
     position: absolute;
     top: 0;
     width: 300px;
     left: 470px;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 #spieler{

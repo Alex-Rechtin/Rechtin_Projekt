@@ -1,3 +1,4 @@
 https://www.mediaevent.de/
 https://www.w3schools.com/
-https://www.mediaevent.de/javascript/jquery-effekte.html
+https://www.mediaevent.de/javascript/
+https://css-tricks.com/
