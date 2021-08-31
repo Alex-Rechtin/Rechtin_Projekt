@@ -29,6 +29,7 @@ const weiterbutton= document.querySelector("#weiter");
 const neustartbutton = document.querySelector("#neustart");
 const hauptmenuebutton = document.querySelector("#hauptmenue");
 
+
 console.log(divtext);
 
 setzeAufgabe();
@@ -48,10 +49,17 @@ let maxbackground = 4;
 let startgedruekt = false;
 let pausegedruekt = false;
 gehtWeg();
+
 // lässt beim drücken vom startbutton die methode kommtwieder anwenden und denn startbutton verschwinden
 startbutton.addEventListener("click", (e) =>{
+
+    // input feld namedesSpielers wird beim drücken von weiter verschwinden
+    namedesSpielers.style.display ="none";
+    console.log(namedesSpielers);
+
     kommtwieder();
     startbutton.style.display = "none";
+    
     // startgedruekt wird true weil das der startbutton gedrückt wurde
     startgedruekt = true;
     stagezahl.textContent = etage;
