@@ -1,6 +1,8 @@
 //Der Body
 const body1 = document.querySelector("body")
 
+//Name des Spielers
+const namedesSpielers = document.querySelector("#namedesSpielers");
 // Die Aufgabe
 const summenFeld = document.querySelector("#summe");
 const zahl1 = document.querySelector("#sum1");
@@ -153,8 +155,9 @@ for (let index = 0; index < alleTueren.length; index++) {
         stagezahl.textContent = etage;
         console.log(fehlversuche + " Versuche");
     });
-    localStorage.setItem("Versuche", fehlversuche)
-    localStorage.setItem("Etage", etage)
+    localStorage.setItem("Versuche", fehlversuche);
+    localStorage.setItem("Etage", etage);
+    localStorage.setItem("Name", namedesSpielers);
     /*
     window.addEventListener('afterprint', (event) => {
         console.log('After print');
