@@ -34,6 +34,9 @@ console.log(divtext);
 
 setzeAufgabe();
 
+// Welche etage man erreihen muss für die Urkunde
+let turmhöhe = 2;
+
 // Diese Variable ist da um die Etage anzugeben
 let etage = 1;
 
@@ -125,7 +128,7 @@ for (let index = 0; index < alleTueren.length; index++) {
         if (e.target.istRichtig === true) {
             //Bei Stufe 30 ist das Ziel des Spiels erreicht und
             // die Zahlen auf den Türen verschwinden
-            if (etage == 2) {
+            if (etage == turmhöhe) {
                 gehtWeg();
                 body1.style.backgroundImage ="url('pics/turmraum.png')";
                 location.href = "urkunde.html"
