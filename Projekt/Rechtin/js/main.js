@@ -156,6 +156,9 @@ for (let index = 0; index < alleTueren.length; index++) {
         stagezahl.textContent = etage;
         console.log(fehlversuche + " Versuche");
     });
+    /**
+     * Übergibt die Daten Weiter, so das man sie auch woanders mit getItem benutzen kann 
+     */
     localStorage.setItem("Versuche", fehlversuche);
     localStorage.setItem("Etage", etage);
     localStorage.setItem("Name", namedesSpielers);
