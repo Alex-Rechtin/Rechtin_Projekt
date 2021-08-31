@@ -3,3 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+}
+
+.nicht-drucken{
+    height: 100px;
+    width: 300px;
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    position: absolute;
+}
+
+#drucken{
+    background-image: url("../pics/Druckenbutton.png");
+    top: 25%;
+    left: 450px;   
+}
+
+#wiederholen{
+    background-image: url("../pics/neustartbutton1.png");
+    top: 45%;
+    left: 450px;  
+}
