@@ -13,6 +13,7 @@ const namedesSpielers = localStorage.getItem("Name");
 
 
 namen.textContent = namedesSpielers;
+console.log(namedesSpielers);
 etage.textContent = etagenzahl;
 fehlversuche.textContent = fehlversuchezahl;
 

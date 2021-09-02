@@ -44,14 +44,18 @@ img, #urkundenText{
 
     #urkundenText{
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
         /*
         Es verschiebt die x un y Position um 50% des Elements
         */
         transform: translate(-50%, -50%);
         /*Font size noch vergrössern*/
-        font-size: 15rem;
+        font-size: 7rem;
         display: block;
+    }
+
+    #einleitungstext{
+        text-align: center;
     }
 }
