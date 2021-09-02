@@ -29,6 +29,9 @@ const weiterbutton= document.querySelector("#weiter");
 const neustartbutton = document.querySelector("#neustart");
 const hauptmenuebutton = document.querySelector("#hauptmenue");
 
+// Der Spieler
+const spieler = document.querySelector("#spieler");
+
 
 console.log(divtext);
 
@@ -135,56 +138,110 @@ for (let index = 0; index < alleTueren.length; index++) {
         if (pausegedruekt) {
             return;
         }
-        // e.target darin wird der button gespeichert auf den gedrückt wurde (<button id="linke/rechte-Tuer" class="tuer">)
-        if (e.target.istRichtig === true) {
-            //Bei Stufe 30 ist das Ziel des Spiels erreicht und
-            // die Zahlen auf den Türen verschwinden
-            if (etage == turmhöhe) {
-                gehtWeg();
-                body1.style.backgroundImage ="url('pics/turmraum.png')";
 
-                /**
-                * Übergibt die Daten Weiter, so das man sie auch woanders mit getItem benutzen kann 
-                */
-                localStorage.setItem("Versuche", fehlversuche);
-                localStorage.setItem("Etage", etage);
+        waehleTuer(e);
+    });
+}
 
-                //darauf wird dann am ende auf die Urkunde.html zugegriffen
-                location.href = "urkunde.html"
-
+async function waehleTuer(e){
+    if(e.target.id === "linkeTuer"){
+        await spieler.animate([
+            {
+                top: "400px",
+                left: "500px",
+                height: "200px",
+                width: "200px"
+            },
+            {
+                top: "200px",
+                left: "370px",
+                height: "150px",
+                width: "150px"
+            },
+            {
+                top: "10px",
+                left: "370px",
+                height: "100px",
+                width: "100px"
             }
-            else{
-            console.log("richtig");
-            // farbe 
-            divtext.style.color = "greenyellow";
-            divtext.textContent = "Richtig";
-            // etage wird erhöht
-            etage++;
-            //zufälliger Background wird genommen aus dem Ordner pics
-            body1.style.backgroundImage = "url('pics/background"+ zufall(minbackground,maxbackground) + ".png')";
+        ], {
+            duration: 1000
+        }).finished;
+    }else{
+        await spieler.animate([
+            {
+                top: "400px",
+                left: "500px",
+                height: "200px",
+                width: "200px"
+            },
+            {
+                top: "200px",
+                left: "770px",
+                height: "150px",
+                width: "150px"
+            },
+            {
+                top: "10px",
+                left: "770px",
+                height: "100px",
+                width: "100px"
             }
+        ], {
+            duration: 1000
+        }).finished;
+    }
+
+
+    // e.target darin wird der button gespeichert auf den gedrückt wurde (<button id="linke/rechte-Tuer" class="tuer">)
+    if (e.target.istRichtig === true) {
+        //Bei Stufe 30 ist das Ziel des Spiels erreicht und
+        // die Zahlen auf den Türen verschwinden
+        if (etage == turmhöhe) {
+            gehtWeg();
+            body1.style.backgroundImage ="url('pics/turmraum.png')";
+
+            /**
+            * Übergibt die Daten Weiter, so das man sie auch woanders mit getItem benutzen kann 
+            */
+            localStorage.setItem("Versuche", fehlversuche);
+            localStorage.setItem("Etage", etage);
+
+            //darauf wird dann am ende auf die Urkunde.html zugegriffen
+            location.href = "urkunde.html"
+
         }
         else{
-            //Bei Etage 10 und Höher fällt der Spieler um 5 Etagen runter 
-            if (etage >= 10 ) {
-                etage-=5;
-                //Fehlversuch erhöhen
-                fehlversuche++;
-            }
-            //Bei Etage höher als 1 fällt der Spieler ein Etage
-            else if (etage > 1) {
-                etage--;
-                //Fehlversuch erhöhen
-                fehlversuche++;
-            }
-            divtext.textContent = "Du bist gefallen!";
-            divtext.style.color = "orange";
+        console.log("richtig");
+        // farbe 
+        divtext.style.color = "greenyellow";
+        divtext.textContent = "Richtig";
+        // etage wird erhöht
+        etage++;
+        //zufälliger Background wird genommen aus dem Ordner pics
+        body1.style.backgroundImage = "url('pics/background"+ zufall(minbackground,maxbackground) + ".png')";
         }
-    
-        setzeAufgabe();
-        stagezahl.textContent = etage;
-        console.log(fehlversuche + " Versuche");
-    });
+    }
+    else{
+        //Bei Etage 10 und Höher fällt der Spieler um 5 Etagen runter 
+        if (etage >= 10 ) {
+            etage-=5;
+            //Fehlversuch erhöhen
+            fehlversuche++;
+        }
+        //Bei Etage höher als 1 fällt der Spieler ein Etage
+        else if (etage > 1) {
+            etage--;
+            //Fehlversuch erhöhen
+            fehlversuche++;
+        }
+        divtext.textContent = "Du bist gefallen!";
+        divtext.style.color = "orange";
+    }
+
+    setzeAufgabe();
+    stagezahl.textContent = etage;
+    console.log(fehlversuche + " Versuche");
 }
 
 //Ab 30 kriegt der spieler die möglichkeit von 2 türen: weiter zugehen oder das spiel ab der Stufe zu beenden!!!

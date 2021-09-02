@@ -90,16 +90,18 @@ input:not([type=submit]) {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
-
 #spieler{
-    /*display: block;*/
-    display: none;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+
     height: 200px;
     width: 200px;
-    background-image: url(../pics/bewegung\ nach\ hinten1.png);
-    background-size: cover;
+    
     image-rendering: pixelated;
     image-rendering: crisp-edges;
+
+    
 }
 
 .button{
