@@ -7,15 +7,21 @@ const namen = document.querySelector("#name");
 const fehlversuche = document.querySelector("#fehlversuche");
 const etage = document.querySelector("#etagennummer");
 //Daten aus der main.js
-const fehlversuchezahl = localStorage.getItem("Versuche");
+const fehlversuchzahl = localStorage.getItem("Versuche");
 const etagenzahl = localStorage.getItem("Etage");
 const namedesSpielers = localStorage.getItem("Name");    
 
 
 namen.textContent = namedesSpielers;
-console.log(namedesSpielers);
-etage.textContent = etagenzahl;
-fehlversuche.textContent = fehlversuchezahl;
+namen.style.color = "blue";
+etage.textContent = "Erreichte Stage " + etagenzahl;
+
+if (fehlversuchzahl === 1) {
+    fehlversuche.textContent = "mit " + fehlversuchzahl + " Fehlversuch";
+}
+else{
+    fehlversuche.textContent = "mit " + fehlversuchzahl + " Fehlversuchen";
+}
 
 
 /**

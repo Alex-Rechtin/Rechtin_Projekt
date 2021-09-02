@@ -37,22 +37,23 @@ img, #urkundenText{
 
 /* erst wenn gedruckt wird, wird dann das img von der html angezeigt
 */
-@media print {
+@media print{
     img{
         display: block;
     }
 
     #urkundenText{
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
         /*
         Es verschiebt die x un y Position um 50% des Elements
         */
         transform: translate(-50%, -50%);
         /*Font size noch vergrössern*/
-        font-size: 7rem;
+        font-size: 2rem;
         display: block;
+        text-align: center;
     }
 
     #einleitungstext{
