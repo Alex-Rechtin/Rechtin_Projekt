@@ -59,7 +59,8 @@ gehtWeg();
 // lässt beim drücken vom startbutton die methode kommtwieder anwenden und denn startbutton verschwinden
 startbutton.addEventListener("click", (e) =>{
     if(namedesSpielers.value !== ""){
-
+        
+        spieler.style.display = "block";
         // input feld namedesSpielers wird beim drücken von weiter verschwinden
         namedesSpielers.style.display ="none";
         console.log(namedesSpielers.value);

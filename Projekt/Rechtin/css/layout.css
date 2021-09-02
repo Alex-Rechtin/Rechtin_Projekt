@@ -91,6 +91,8 @@ input:not([type=submit]) {
     -webkit-text-stroke-color: black;
 }
 #spieler{
+    display: none;
+
     position: absolute;
     top: 400px;
     left: 500px;
