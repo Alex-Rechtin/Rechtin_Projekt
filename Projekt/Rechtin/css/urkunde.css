@@ -50,6 +50,7 @@ img, #urkundenText{
         Es verschiebt die x un y Position um 50% des Elements
         */
         transform: translate(-50%, -50%);
+        /*Font size noch verändern*/
         font-size: 500px;
         display: block;
     }
