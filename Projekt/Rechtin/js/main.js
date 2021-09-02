@@ -58,7 +58,7 @@ startbutton.addEventListener("click", (e) =>{
 
     // input feld namedesSpielers wird beim drücken von weiter verschwinden
     namedesSpielers.style.display ="none";
-    console.log(namedesSpielers);
+    console.log(namedesSpielers.value);
     body1.style.backgroundImage = ("url('pics/background1.png");
     kommtwieder();
     startbutton.style.display = "none";
@@ -171,7 +171,7 @@ for (let index = 0; index < alleTueren.length; index++) {
      */
     localStorage.setItem("Versuche", fehlversuche);
     localStorage.setItem("Etage", etage);
-    localStorage.setItem("Name", namedesSpielers);
+    localStorage.setItem("Name", namedesSpielers.value);
 }
 
 //Ab 30 kriegt der spieler die möglichkeit von 2 türen: weiter zugehen oder das spiel ab der Stufe zu beenden!!!

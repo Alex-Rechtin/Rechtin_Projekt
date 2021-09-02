@@ -176,4 +176,3 @@ function buttonsfalse(){
     neustartbutton.style.display = "none";
     hauptmenuebutton.style.display = "none";
 }
-

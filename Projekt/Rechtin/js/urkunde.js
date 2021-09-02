@@ -2,11 +2,21 @@
 const wiederholen = document.querySelector("#wiederholen");
 const drucken = document.querySelector("#drucken");
 
+//Div Container aus urkunde.js
+const namen = document.querySelector("#name");
+const fehlversuche = document.querySelector("#fehlversuche");
+const etage = document.querySelector("#etagennummer");
 //Daten aus der main.js
-const fehlversuche = localStorage.getItem("Versuche");
-const etage = localStorage.getItem("Etage");
-const namedesSoielrs = localStorage.getItem("Name");    
-    
+const fehlversuchezahl = localStorage.getItem("Versuche");
+const etagenzahl = localStorage.getItem("Etage");
+const namedesSpielers = localStorage.getItem("Name");    
+
+
+namen.textContent = namedesSpielers;
+etage.textContent = etagenzahl;
+fehlversuche.textContent = fehlversuchezahl;
+
+
 /**
  * Der widerholen.addEventListener macht das es beim Klicken der Taste die Seite
  *  wieder zurück zur Spiel Seite geht 
@@ -26,4 +36,3 @@ drucken.addEventListener("click", (e) =>{
     window.print();
     wiederholen.style.display= "block";
 });
-

@@ -29,14 +29,28 @@ body{
     left: 450px;  
 }
 
-img{
+
+img, #urkundenText{
     display: none;
 }
+
 
 /* erst wenn gedruckt wird, wird dann das img von der html angezeigt
 */
 @media print {
     img{
+        display: block;
+    }
+
+    #urkundenText{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*
+        Es verschiebt die x un y Position um 50% des Elements
+        */
+        transform: translate(-50%, -50%);
+        font-size: 500px;
         display: block;
     }
 }
