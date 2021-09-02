@@ -35,7 +35,7 @@ console.log(divtext);
 setzeAufgabe();
 
 // Welche etage man erreihen muss für die Urkunde
-let turmhöhe = 2;
+let turmhöhe = 3;
 
 // Diese Variable ist da um die Etage anzugeben
 let etage = 1;
@@ -86,6 +86,11 @@ body1.addEventListener ("keydown", (evt) => {
 weiterbutton.addEventListener("click", (e) =>{
     buttonsfalse();
     pausegedruekt = false;
+
+    /**
+     * Übergibt die Daten Weiter, so das man sie auch woanders mit getItem benutzen kann 
+     */
+    localStorage.setItem("Name", namedesSpielers.value);
 });
 
 
@@ -132,7 +137,16 @@ for (let index = 0; index < alleTueren.length; index++) {
             if (etage == turmhöhe) {
                 gehtWeg();
                 body1.style.backgroundImage ="url('pics/turmraum.png')";
+
+                /**
+                * Übergibt die Daten Weiter, so das man sie auch woanders mit getItem benutzen kann 
+                */
+                localStorage.setItem("Versuche", fehlversuche);
+                localStorage.setItem("Etage", etage);
+
+                //darauf wird dann am ende auf die Urkunde.html zugegriffen
                 location.href = "urkunde.html"
+
             }
             else{
             console.log("richtig");
@@ -166,12 +180,6 @@ for (let index = 0; index < alleTueren.length; index++) {
         stagezahl.textContent = etage;
         console.log(fehlversuche + " Versuche");
     });
-    /**
-     * Übergibt die Daten Weiter, so das man sie auch woanders mit getItem benutzen kann 
-     */
-    localStorage.setItem("Versuche", fehlversuche);
-    localStorage.setItem("Etage", etage);
-    localStorage.setItem("Name", namedesSpielers.value);
 }
 
 //Ab 30 kriegt der spieler die möglichkeit von 2 türen: weiter zugehen oder das spiel ab der Stufe zu beenden!!!
