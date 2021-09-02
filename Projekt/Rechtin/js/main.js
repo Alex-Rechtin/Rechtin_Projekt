@@ -55,16 +55,26 @@ gehtWeg();
 
 // lässt beim drücken vom startbutton die methode kommtwieder anwenden und denn startbutton verschwinden
 startbutton.addEventListener("click", (e) =>{
+    if(namedesSpielers.value !== ""){
 
-    // input feld namedesSpielers wird beim drücken von weiter verschwinden
-    namedesSpielers.style.display ="none";
-    console.log(namedesSpielers.value);
-    body1.style.backgroundImage = ("url('pics/background1.png");
-    kommtwieder();
-    startbutton.style.display = "none";
-    // startgedruekt wird true weil das der startbutton gedrückt wurde
-    startgedruekt = true;   
-    stagezahl.textContent = etage;
+        // input feld namedesSpielers wird beim drücken von weiter verschwinden
+        namedesSpielers.style.display ="none";
+        console.log(namedesSpielers.value);
+        body1.style.backgroundImage = ("url('pics/background1.png");
+        kommtwieder();
+        startbutton.style.display = "none";
+        // startgedruekt wird true weil das der startbutton gedrückt wurde
+        startgedruekt = true;   
+        stagezahl.textContent = etage;
+
+        /**
+         * Übergibt die Daten Weiter, so das man sie auch woanders mit getItem benutzen kann 
+         */
+         localStorage.setItem("Name", namedesSpielers.value);
+    }
+    else{
+        namedesSpielers.style.border = "5px solid red";
+    }
 });
 
 // macht das man die esc taste benutzen kann um auf die buttons zu drücken
@@ -86,11 +96,6 @@ body1.addEventListener ("keydown", (evt) => {
 weiterbutton.addEventListener("click", (e) =>{
     buttonsfalse();
     pausegedruekt = false;
-
-    /**
-     * Übergibt die Daten Weiter, so das man sie auch woanders mit getItem benutzen kann 
-     */
-    localStorage.setItem("Name", namedesSpielers.value);
 });
 
 
