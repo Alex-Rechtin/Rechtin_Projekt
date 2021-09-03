@@ -19,11 +19,11 @@ const namedesSpielers = localStorage.getItem("Name");
 namen.textContent = namedesSpielers;
 namen.style.color = "blue";
 
-etage.textContent = "Erreichte Stage " + etagenzahl;
+etage.textContent = etagenzahl;
 
 
 fehlerUnterlinie.textContent = fehlversuchzahl;
-if (fehlversuchzahl === 1) {
+if (fehlversuchzahl === "1") {
     fehler.textContent = ". Fehlversuch";
 
 }
