@@ -5,11 +5,13 @@ const drucken = document.querySelector("#drucken");
 //Div Container aus urkunde.js
 const namen = document.querySelector("#name");
 const fehlversuche = document.querySelector("#fehlversuche");
-const etage = document.querySelector("#etagennummer");
 
 //Span
 const fehlerUnterlinie = document.querySelector(".fehlversuch-unterlinie");
 const fehler = document.querySelector(".text-fehlversuche");
+const etage = document.querySelector(".etagen-unterlinie");
+const etagentext = document.querySelector(".text-etage");
+
 //Daten aus der main.js
 const fehlversuchzahl = localStorage.getItem("Versuche");
 const etagenzahl = localStorage.getItem("Etage");
@@ -19,6 +21,7 @@ const namedesSpielers = localStorage.getItem("Name");
 namen.textContent = namedesSpielers;
 namen.style.color = "blue";
 
+etagentext.textContent = "Erreichte Stage: ";
 etage.textContent = etagenzahl;
 
 
