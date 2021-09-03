@@ -20,7 +20,7 @@ body, input {
     text-align: center; 
 }
 
-#namedesSpielers{
+#name-des-spielers{
     position: absolute;
     height: 50px;
     width: 500px;
@@ -54,11 +54,11 @@ body, input {
     color: darkturquoise;
 }
 
-#linkeTuer{
+#linke-tuer{
     left: 367px;
 }
 
-#rechteTuer{
+#rechte-tuer{
     left: 775px;
     
 }

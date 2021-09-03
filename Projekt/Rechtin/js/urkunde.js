@@ -6,6 +6,10 @@ const drucken = document.querySelector("#drucken");
 const namen = document.querySelector("#name");
 const fehlversuche = document.querySelector("#fehlversuche");
 const etage = document.querySelector("#etagennummer");
+
+//Span
+const fehlerUnterlinie = document.querySelector(".fehlversuch-unterlinie");
+const fehler = document.querySelector(".text-fehlversuche");
 //Daten aus der main.js
 const fehlversuchzahl = localStorage.getItem("Versuche");
 const etagenzahl = localStorage.getItem("Etage");
@@ -14,13 +18,17 @@ const namedesSpielers = localStorage.getItem("Name");
 
 namen.textContent = namedesSpielers;
 namen.style.color = "blue";
+
 etage.textContent = "Erreichte Stage " + etagenzahl;
 
+
+fehlerUnterlinie.textContent = fehlversuchzahl;
 if (fehlversuchzahl === 1) {
-    fehlversuche.textContent = "mit " + fehlversuchzahl + " Fehlversuch";
+    fehler.textContent = ". Fehlversuch";
+
 }
 else{
-    fehlversuche.textContent = "mit " + fehlversuchzahl + " Fehlversuchen";
+    fehler.textContent = ". Fehlversuchen";
 }
 
 

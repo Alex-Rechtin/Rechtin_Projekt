@@ -2,7 +2,7 @@
 const body1 = document.querySelector("body")
 
 //Name des Spielers
-const namedesSpielers = document.querySelector("#namedesSpielers");
+const namedesSpielers = document.querySelector("#name-des-spielers");
 // Die Aufgabe
 const summenFeld = document.querySelector("#summe");
 const zahl1 = document.querySelector("#sum1");
@@ -19,8 +19,8 @@ const stage = document.querySelectorAll("#stage");
 const stagezahl = document.querySelector("#etagennummer");
 
 // Die Zahlen auf den Türen
-const linkeTuer = document.querySelector("#linkeTuer");
-const rechteTuer = document.querySelector("#rechteTuer");
+const linkeTuer = document.querySelector("#linke-tuer");
+const rechteTuer = document.querySelector("#rechte-tuer");
 const alleTueren = document.querySelectorAll(".tuer");
 
 //Die Buttons 
