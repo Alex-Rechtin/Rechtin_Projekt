@@ -34,8 +34,6 @@ const hauptmenuebutton = document.querySelector("#hauptmenue");
 // Spieler 
 const spieler = document.querySelector("#spieler");
 
-console.log(divtext);
-
 setzeAufgabe();
 
 // Welche etage man erreihen muss für die Urkunde
@@ -70,7 +68,6 @@ startbutton.addEventListener("click", (e) =>{
         storytext.textContent = "";
         // input feld namedesSpielers wird beim drücken von weiter verschwinden
         namedesSpielers.style.display ="none";
-        console.log(namedesSpielers.value);
         body.style.backgroundImage = "url('pics/background1.png')";
 
         kommtwieder();
@@ -134,7 +131,6 @@ neustartbutton.addEventListener("click", (e) =>{
     etage = 1;
     fehlversuche = 0;
     stagezahl.textContent = etage;
-    console.log(fehlversuche + " Fehlersuche");
     divtext.textContent = "";
     body.style.backgroundImage = "url('pics/background1.png')";
 });
@@ -216,7 +212,6 @@ function tuerPruefung(e) {
 
     spielerdruektTuer = false;
     stagezahl.textContent = etage;
-    console.log(fehlversuche + " Versuche");
 }
 
 //Ab 30 kriegt der spieler die möglichkeit von 2 türen: weiter zugehen oder das spiel ab der Stufe zu beenden!!!

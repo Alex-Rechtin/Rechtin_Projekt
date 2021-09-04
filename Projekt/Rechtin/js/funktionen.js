@@ -90,7 +90,6 @@ function setzeAufgabe(){
     zahl1.value = summand1;
     zahl2.value = summand2;
     summenFeld.value = summe;
-    console.log(raus);
     switch (raus) {
         case 0:
             zahl1.value = "?";
