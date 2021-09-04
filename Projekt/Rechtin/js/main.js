@@ -11,6 +11,8 @@ const zahl2 = document.querySelector("#sum2");
 // Die div container
 const aufgabe = document.querySelector("#aufgabe");
 const spiel = document.querySelector("#spiel");
+const storytext = document.querySelector("#story-text")
+
 //Der Text ob richtige Tür oder falsche Tür
 const divtext = document.querySelector("#text");
 
@@ -56,7 +58,7 @@ gehtWeg();
 // lässt beim drücken vom startbutton die methode kommtwieder anwenden und denn startbutton verschwinden
 startbutton.addEventListener("click", (e) =>{
     if(namedesSpielers.value !== ""){
-
+        storytext.textContent = "";
         // input feld namedesSpielers wird beim drücken von weiter verschwinden
         namedesSpielers.style.display ="none";
         console.log(namedesSpielers.value);

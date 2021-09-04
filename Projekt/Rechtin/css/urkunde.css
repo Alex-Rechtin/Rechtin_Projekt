@@ -35,11 +35,13 @@ img, #urkundenText{
 }
 
 
-/* erst wenn gedruckt wird, wird dann das img von der html angezeigt
+/* 
+*erst wenn gedruckt wird, wird dann das img von der html angezeigt
 */
 @media print{
     img{
         display: block;
+        margin-left: 10%;
     }
 
     #urkundenText{
@@ -54,9 +56,16 @@ img, #urkundenText{
         font-size: 2rem;
         display: block;
         text-align: center;
+        font-style: italic;
     }
 
     #einleitungstext{
         text-align: center;
     }
+
+    .etagen-unterlinie, .fehlversuch-unterlinie, #name{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
 }
