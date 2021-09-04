@@ -39,7 +39,7 @@ console.log(divtext);
 setzeAufgabe();
 
 // Welche etage man erreihen muss für die Urkunde
-let turmhöhe = 3;
+let turmhöhe = 20;
 
 // Diese Variable ist da um die Etage anzugeben
 let etage = 1;
