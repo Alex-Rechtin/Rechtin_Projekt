@@ -65,7 +65,6 @@ gehtWeg();
 // lässt beim drücken vom startbutton die methode kommtwieder anwenden und denn startbutton verschwinden
 startbutton.addEventListener("click", (e) =>{
     if(namedesSpielers.value !== ""){
-
         spielerStylen();
 
         storytext.textContent = "";
@@ -172,6 +171,7 @@ function tuerPruefung(e) {
     if (e.target.istRichtig === true) {
         //Bei Stufe 20 ist das Ziel des Spiels erreicht und
         // die Zahlen auf den Türen verschwinden
+
         if (etage == turmhöhe) {
             gehtWeg();
             

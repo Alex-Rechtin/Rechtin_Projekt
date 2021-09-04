@@ -137,7 +137,6 @@ function druck() {
  */
 //lässt alles weg von der index html was man beim hauptmenü oder am ende nicht braucht
 function gehtWeg(){
-    body.style.backgroundImage = "url('pics/endhintergrund.png')";
     spiel.style.display = "none";
     aufgabe.style.display = "none";
     divtext.style.display = "none";
