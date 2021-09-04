@@ -59,7 +59,7 @@ img, #urkundenText{
         font-style: italic;
     }
 
-    #einleitungstext{
+    .einleitungstext{
         text-align: center;
     }
 
@@ -67,5 +67,5 @@ img, #urkundenText{
         text-decoration: underline;
         font-weight: bold;
     }
-    
+
 }
