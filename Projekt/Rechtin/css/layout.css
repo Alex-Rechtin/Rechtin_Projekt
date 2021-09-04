@@ -15,12 +15,17 @@ body{
 }
 
 body, input { 
-    font-size: 40px; 
+    font-size: 2.5rem; 
     font-weight: bold; 
     text-align: center; 
 }
 
 #story-text{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 30%;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align:left; 
 }
@@ -29,22 +34,20 @@ body, input {
     position: absolute;
     height: 50px;
     width: 500px;
-    top: 45%;
+    top: 59%;
     left: 350px;  
 }
 
 #aufgabe { 
-    font-size: 60px; 
+    font-size: 3.75rem; 
     margin: 0; 
     text-align: left;
 }
 
 #etagennummer{
-    font-size: 50px;
+    font-size: 3.125rem;
     padding: 20px;
     color: white;
-    /*position: absolute;
-    top: 0;*/
 }
 
 .tuer{
@@ -54,7 +57,7 @@ body, input {
     height: 88px;
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     color: darkturquoise;
 }
@@ -73,7 +76,7 @@ input:not([type=submit]) {
 }
   
 [type=submit] { 
-    font-size: 20px; 
+    font-size: 1.25rem; 
     margin-left: 30px;
 }
 
@@ -97,8 +100,10 @@ input:not([type=submit]) {
 }
 
 #spieler{
-    /*display: block;*/
-    display: none;
+    position: absolute;
+    display: block;
+    top: 553px;
+    left: 200px;
     height: 200px;
     width: 200px;
     background-image: url(../pics/bewegung\ nach\ hinten1.png);

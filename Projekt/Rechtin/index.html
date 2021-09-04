@@ -4,24 +4,30 @@
     <meta charset="utf-8">
     <title>Ihr Spiel</title>
     <link rel="stylesheet" href="css/layout.css">
+    <script defer src="./js/funktionen.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/spieler.js"></script>
   </head>
 
   <body>
-    <div id="story-text">Die Prinzessin wurde gefangen genommen im Math Tower. <br>
-      Löse alle Aufgaben des Math Tower um die Prinzessin zu retten.</div>
+    <div id="story-text">
+      Die Prinzessin wurde gefangen genommen im Math Tower. 
+      <br><br>
+      Löse alle Aufgaben des Math Tower um die Prinzessin zu retten.
+    </div>
     <input id="name-des-spielers" type="text" placeholder="Bitte Namen eintragen">
     <div id="aufgabe">   
-    <h1 id="etagennummer">1</h1>
-    <button class="tuer" id="linke-tuer"></button>
-    <button class="tuer" id="rechte-tuer"></button>
+      <h1 id="etagennummer">1</h1>
+      <button class="tuer" id="linke-tuer"></button>
+      <button class="tuer" id="rechte-tuer"></button>
     </div>
 
     <div id="spiel">
-    <form autocomplete="off">
-      <input type="text" id="sum1" class="ohneRahmen" readonly> + 
-      <input type="text" id="sum2" class="ohneRahmen" readonly> = 
-      <input type="text" id="summe" readonly><br>
-    </form>
+      <form autocomplete="off">
+        <input type="text" id="sum1" readonly> + 
+        <input type="text" id="sum2" readonly> = 
+        <input type="text" id="summe" readonly><br>
+      </form>
     </div>
     
     <div id="text"></div>
@@ -31,8 +37,5 @@
     <div id="neustart" class="button"></div>
     <div id="hauptmenue"></div>
     <div id="buttons" class="button"></div>
-
-    <script src="js/funktionen.js"></script>
-    <script src="js/main.js"></script>
   </body>
 </html>
