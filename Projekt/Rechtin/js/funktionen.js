@@ -51,7 +51,6 @@ function zahlAnpassung(richtigeZahl,erhoehungsZahl) {
     }
     while (richtigeZahl === erhoehungsZahl) {
         richtigeZahl = zufall(min1,max1);
-        return richtigeZahl;
     }
     return richtigeZahl;
     
