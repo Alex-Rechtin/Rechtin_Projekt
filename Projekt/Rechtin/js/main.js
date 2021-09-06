@@ -37,7 +37,7 @@ const spieler = document.querySelector("#spieler");
 setzeAufgabe();
 
 // Welche etage man erreihen muss für die Urkunde
-let turmhöhe = 20;
+let turmhöhe = 3;
 
 // Diese Variable ist da um die Etage anzugeben
 let etage = 1;
