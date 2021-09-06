@@ -174,3 +174,12 @@ function buttonsfalse(){
     neustartbutton.style.display = "none";
     hauptmenuebutton.style.display = "none";
 }
+
+/**
+ * Die Funktion storytextAnpassen passt den text für den Tipp(Tutorial) an.
+ */
+function storytextAnpassen() {
+    storytext.innerHTML = "Tipp: <br> Um die Aufgabe zu lösen Klicke auf die richtige Tür";
+    storytext.style.left = "60%";
+    storytext.style.top = "70%";
+}

@@ -65,7 +65,7 @@ startbutton.addEventListener("click", (e) =>{
     if(namedesSpielers.value !== ""){
         spielerStylen();
 
-        storytext.textContent = "";
+        storytextAnpassen();
         // input feld namedesSpielers wird beim drücken von weiter verschwinden
         namedesSpielers.style.display ="none";
         body.style.backgroundImage = "url('pics/background1.png')";
@@ -144,7 +144,8 @@ neustartbutton.addEventListener("click", (e) =>{
 for (let index = 0; index < alleTueren.length; index++) {
 
     alleTueren[index].addEventListener("click", (e) =>{
-
+        // Tipp verschwindet
+        storytext.innerHTML = "";
         // wenn es pausiert return es und hört auf 
         if (pausegedruekt) {
             return;
