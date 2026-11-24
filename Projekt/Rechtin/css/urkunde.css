@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("../pics/endHintergrund.png");
+    background-image: url("../pics/ending-background.png");
 }
 
 .nicht-drucken{
@@ -18,13 +18,13 @@ body{
 }
 
 #drucken{
-    background-image: url("../pics/Druckenbutton.png");
+    background-image: url("../pics/print-btn.png");
     top: 25%;
     left: 450px;   
 }
 
 #wiederholen{
-    background-image: url("../pics/neustartbutton1.png");
+    background-image: url("../pics/new-start-btn-Certificate.png");
     top: 45%;
     left: 450px;  
 }

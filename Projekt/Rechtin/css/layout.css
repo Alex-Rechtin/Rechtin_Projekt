@@ -7,7 +7,7 @@
 body{
     width: 1200px;
     height: 700px;
-    background-image: url("../pics/hauptHintergrund.png");
+    background-image: url("../pics/main-background.png");
     background-repeat: no-repeat;
     background-position: center; 
     /*margin: 10px auto;
@@ -106,7 +106,7 @@ input:not([type=submit]) {
     left: 200px;
     height: 200px;
     width: 200px;
-    background-image: url(../pics/bewegung\ nach\ hinten1.png);
+    background-image: url(../pics/move-backward.png);
     background-size: cover;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
@@ -122,25 +122,25 @@ input:not([type=submit]) {
 }
 
 #startbutton{
-    background-image: url("../pics/startbutton.png");
+    background-image: url("../pics/start-btn.png");
     top: 15%;
     left: 450px;   
 }
 
 #weiter{
-    background-image: url("../pics/weiterbutton.png");
+    background-image: url("../pics/next-btn.png");
     top: 25%;
     left: 450px;  
 }
 
 #neustart{
-    background-image: url("../pics/neustartbutton.png");
+    background-image: url("../pics/new-start-btn.png");
     top: 45%;
     left: 450px;   
 }
 
 #hauptmenue{
-    background-image: url("../pics/hauptmenuebutton.png");
+    background-image: url("../pics/main-menu-btn.png");
     top: 65%;
     left: 410px;  
     height: 100px;
