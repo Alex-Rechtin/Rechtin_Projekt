@@ -5,7 +5,7 @@
  * @param {*} e e ist das Klick Event 
  */
 async function spielerWaehltTuer(e){
-    spieler.style.backgroundImage = "url('pics/laufanimation.gif')";
+    spieler.style.backgroundImage = "url('pics/run-animation.gif')";
     if(e.target.id === "linke-tuer"){
         // await wartet bis die Animation fertig ist
         await spieler.animate([
@@ -61,7 +61,7 @@ async function spielerWaehltTuer(e){
             duration: 1000
         }).finished;
     }
-    spieler.style.backgroundImage = "url('pics/1nachvornegehen1.png')";
+    spieler.style.backgroundImage = "url('pics/move-forward.png')";
     tuerPruefung(e);
 }
 
@@ -70,7 +70,7 @@ async function spielerWaehltTuer(e){
  */
 function spielerStylen() {
     
-    spieler.style.backgroundImage = "url('pics/1nachvornegehen1.png')";
+    spieler.style.backgroundImage = "url('pics/move-forward.png')";
     spieler.style.top = "400px";
     spieler.style.left = "500px";
     spieler.style.height = "200px";
